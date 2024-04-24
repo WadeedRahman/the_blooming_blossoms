@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+            <img src="assets/img/logo.png" style="height: 400px; width:auto;">
+            <div class="header">
+                <h1>The Blooming Blossoms</h1>
+            </div>
+        </div>
+        <div class="topnav">
+            <a href="index.php">Home</a>
+            <a href="about.php">About</a>
+            <a href="contact.php">Contact Us</a>
+            <a href="cart.php"><i class="fa fa-shopping-cart"></i></a>
+        </div>
+    <div class="signup-container">
+        <h2>Signup</h2>
+        <form id="signup-form" action="registerUserInDB.php" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <input type="submit" value="Sign up" class="signup-btn">
+        </form>
+        <div class="form-footer">
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+    <script src="signupValidate.js"></script>
+</body>
+</html>
